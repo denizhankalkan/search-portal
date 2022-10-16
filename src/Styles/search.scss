@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+@mixin search-box($width: 24rem) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-flow: row nowrap;
+
+
+  .i {
+    position: absolute; 
+    margin: 0 !important;
+    padding-left: 1rem;
+    font-size: 150%;
+    color: var(--color-icon);
+    cursor: pointer;
+  }
+
+  .search-input {
+    width: $width;
+    background-color: #443d5f;
+    border: none;
+    border-bottom: solid 1px var(--color-icon);
+    color: var(--color-input);
+    padding: 0.4rem 2.5rem 0.4rem 3rem;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .search-input:focus {
+    width: 100%;
+    outline: none !important;
+    border: none;
+    border-bottom: solid 1px var(--color-border);
+  }
+}
+
+.search-header-bar {
+  @include search-box($width: 24rem);
+}
+
+.nav-search {
+  padding: 1rem 0 1rem 0;
+  background-color: var(--color-search-bg);
+}
