@@ -24,3 +24,8 @@ Accordingly, the filtered results are displayed on the screen.
 <img width="1440" alt="Screen Shot 2022-10-17 at 00 17 58" src="https://user-images.githubusercontent.com/64587314/196058967-482570d9-3b57-4f2f-844d-a93f02acb7a9.png">
 
 
+## About Technologies
+
+1. React js for framework
+2. Sass for style 
+3. Gulp for task runner
